@@ -50,7 +50,7 @@ class _SolanaHomeViewState extends State<SolanaHomeView> {
 
       /// step 4
       final result = await client.authorize(
-        identityUri: Uri.parse('https://flutter_solana_starter.apmink.com'),
+        identityUri: Uri.parse('https://flutter_solana_starter.example.com'),
         iconUri: Uri.parse('favicon.ico'),
         identityName: 'Flutter Solana Starter App',
         cluster: 'devnet',
@@ -139,9 +139,9 @@ class _SolanaHomeViewState extends State<SolanaHomeView> {
     localScenario.startActivityForResult(null).ignore();
     final client = await localScenario.start();
     final reAuth = await client.reauthorize(
-      identityUri: Uri.parse('https://solana.apmink.com'),
+      identityUri: Uri.parse('https://flutter_solana_starter.example.com'),
       iconUri: Uri.parse('favicon.ico'),
-      identityName: 'Solana App by Apmink',
+      identityName: 'Flutter Solana Starter App',
       authToken: _result!.authToken,
     );
 
@@ -189,7 +189,7 @@ class _SolanaHomeViewState extends State<SolanaHomeView> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Solana Flutter Example'),
+          title: const Text('Flutter Solana Starter App'),
           centerTitle: true,
           actions: [
             ElevatedButton(
