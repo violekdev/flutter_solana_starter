@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.solana.starter.flutter_solana_starter">
+    package="com.example.flutter_solana_starter">
    <application
         android:label="${appName}"
         android:name="${applicationName}"
